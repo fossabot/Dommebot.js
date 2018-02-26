@@ -1,0 +1,17 @@
+{
+  "start": [
+    "responses to starting game"
+  ],
+  "win": [
+    "responses to winning"
+  ],
+  "lose": [
+    "responses to losing"
+  ],
+  "tie": [
+    "responses to a tie"
+  ],
+  "invalid": [
+    "responses to an invalid choice"
+  ]
+}

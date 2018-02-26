@@ -1,0 +1,9 @@
+{
+  "bot": {
+    "token": "bot-token-here",
+    "prefix": "!domme",
+    "prefixes": ["!dom", "!domme", "!dommebot"],
+    "status": "nothing | !domme",
+    "disabledEvents": ["TYPING_START"]
+  }
+}

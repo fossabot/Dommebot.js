@@ -1,0 +1,70 @@
+{
+  "genderVars": {
+    "masculine": {
+      "morphosyntax": "singular",
+      "personalNoun": "boy",
+      "pluralNoun": "boys",
+      "subjective": "he",
+      "objective": "him",
+      "depPossessive": "his",
+      "indPossessive": "his",
+      "reflexive": "himself"
+    },
+    "feminine": {
+      "morphosyntax": "singular",
+      "personalNoun": "girl",
+      "pluralNoun": "girls",
+      "subjective": "she",
+      "objective": "her",
+      "depPossessive": "her",
+      "indPossessive": "hers",
+      "reflexive": "herself"
+    },
+    "epicene": {
+      "morphosyntax": "plural",
+      "personalNoun": "person",
+      "pluralNoun": "people",
+      "subjective": "they",
+      "objective": "them",
+      "depPossessive": "their",
+      "indPossessive": "theirs",
+      "reflexive": "themself"
+    },
+    "object": {
+      "morphosyntax": "singular",
+      "personalNoun": "thing",
+      "pluralNoun": "things",
+      "subjective": "it",
+      "objective": "it",
+      "depPossessive": "its",
+      "indPossessive": "its",
+      "reflexive": "itself"
+    }
+  },
+  "genderRoles": [
+    {
+      "group": "feminine",
+      "roles": ["Female", "She/Her"]
+    },
+    {
+      "group": "masculine",
+      "roles": ["Male", "He/Him"]
+    },
+    {
+      "group": "epicene",
+      "roles": ["Nonbinary", "They/Them"]
+    },
+    {
+      "group": "any",
+      "roles": ["Any Pronouns"]
+    },
+    {
+      "group": "ask",
+      "roles": ["Ask Pronouns"]
+    },
+    {
+      "group": "object",
+      "roles": ["It/Its", "Dehumanizing"]
+    }
+  ]
+}

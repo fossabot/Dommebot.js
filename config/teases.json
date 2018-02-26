@@ -1,0 +1,36 @@
+{
+  "Gender": [
+    {
+      "roles": [
+        "names of roles"
+      ],
+      "teases": [
+        "teases for this role"
+      ]
+    }
+  ],
+  "Colour": [
+    { "name": "name of role",
+      "teases": [
+        "teases for this role"
+      ]
+    }
+  ],
+  "Role": [
+    {
+      "name": "name of role",
+      "teases": [
+        "teases for this role"
+      ]
+    }
+  ],
+  "People": [
+    {
+      "name": "name of person",
+      "id": "person's id",
+      "teases": [
+        "teases for this person"
+      ]
+    }
+  ]
+}
