@@ -36,17 +36,6 @@ Help.document({
   syntax: ''
 })
 
-function checkMatchingRoles(a, b) {
-  hasMatch = false
-  a.forEach(role => {
-    if (b.includes(role.name)) {
-      hasMatch = true
-    }
-  })
-
-  return hasMatch
-}
-
 exports.send = (message, suffix, config) => {
   let subject
   let parts = suffix.split(' ')

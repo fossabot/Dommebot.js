@@ -73,15 +73,6 @@ function getGenders (memberRoles) {
 }
 
 function genderString (gender, string) {
-  /*switch (vars.morphosyntax) {
-    case 'singular':
-      //he is, she is, it is      
-      break
-    case 'plural':
-      //they are
-      break
-  }*/
-
   getReplacements(gender).forEach(replacement => {
     string = string.replace(replacement.regex, replacement.value)
   })
