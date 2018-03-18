@@ -85,9 +85,9 @@ function getCommands () {
 function getCommandHelp (c, config) {
   let arr = Object.keys(commands)
   let lower = arr.map(key => {
-    return key.toLowerCase().replace(/-/g,'')
+    return key.toLowerCase().replace(/-/g, '')
   })
-  let command = c.replace(/-/g,'')
+  let command = c.replace(/-/g, '')
   if (lower.includes(command)) {
     let entry = commands[arr[lower.indexOf(command)]]
     let begin = '```\n' + entry.name + ': ' + entry.use + '\n\n'

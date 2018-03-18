@@ -20,7 +20,7 @@ const Help = require('./help')
 const Random = require('../utilities/random')
 const fs = require('fs')
 let responses = []
-fs.readFile('./config/pronouns.json', 'utf8', function onRead(err, data) {
+fs.readFile('./config/pronouns.json', 'utf8', function onRead (err, data) {
   if (err) {
     console.error(err.message)
   }

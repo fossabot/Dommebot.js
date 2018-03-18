@@ -23,12 +23,12 @@ const fs = require('fs')
 let responses = []
 let link = ''
 
-fs.readFile('./config/kinklist.json', 'utf8', function onRead(err, data) {
+fs.readFile('./config/kinklist.json', 'utf8', function onRead (err, data) {
   if (err) {
     console.error(err.message)
   }
 
-  file = JSON.parse(data)
+  let file = JSON.parse(data)
   responses = file.responses
   link = file.link
 })

@@ -18,7 +18,7 @@
 
 const fs = require('fs')
 let config = {}
-fs.readFile('./config/gender.json', 'utf8', function onRead(err, data) {
+fs.readFile('./config/gender.json', 'utf8', function onRead (err, data) {
   if (err) {
     console.error(err.message)
   }
@@ -31,7 +31,7 @@ function getReplacements (gender) {
   let replacements = []
   try {
     Object.getOwnPropertyNames(vars).forEach(key => {
-      replacements.push({ regex: new RegExp(`&${key}`, 'g'), value: vars[key]})
+      replacements.push({regex: new RegExp(`&${key}`, 'g'), value: vars[key]})
     })
   } catch (ex) {
     console.log(ex.message)
@@ -40,7 +40,7 @@ function getReplacements (gender) {
   return replacements
 }
 
-function getGenders(memberRoles) {
+function getGenders (memberRoles) {
   let genders = []
   memberRoles.forEach(role => {
     config.genderRoles.forEach(genderRole => {
@@ -48,14 +48,14 @@ function getGenders(memberRoles) {
       if (genderRole.roles.includes(role)) {
         matches.push(genderRole.group)
       }
-      
+
       if (matches.includes('any')) {
         matches = [
           'masculine',
           'feminine',
           'epicene'
         ]
-      } 
+      }
 
       matches.forEach(match => {
         if (!genders.includes(match)) {

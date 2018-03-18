@@ -25,7 +25,7 @@ Help.document({
 })
 
 let nicknames = {}
-fs.readFile('./config/nicknames.json', 'utf8', function onRead(err, data) {
+fs.readFile('./config/nicknames.json', 'utf8', function onRead (err, data) {
   if (err) {
     console.error(err.message)
   }
@@ -34,12 +34,12 @@ fs.readFile('./config/nicknames.json', 'utf8', function onRead(err, data) {
 })
 
 function write () {
-  fs.writeFile('./config/nicknames.json', JSON.stringify(nicknames, null, 2), 
+  fs.writeFile('./config/nicknames.json', JSON.stringify(nicknames, null, 2),
     'utf8', (err) => {
-    if (err) {
-      console.error(err.message)
-    }
-  })
+      if (err) {
+        console.error(err.message)
+      }
+    })
 }
 
 exports.send = (message, suffix, config) => {
@@ -57,7 +57,6 @@ exports.send = (message, suffix, config) => {
         break
       default:
         message.channel.send('Your nickname is ' + nickname)
-
     }
   } else {
     let charRegexp = /([\\\t\n\r`*_~])+/g
@@ -76,7 +75,7 @@ exports.send = (message, suffix, config) => {
     } else if (mentions) {
       message.channel.send('Nickname cannot contain mentions.')
     } else if (nick.length > 128) {
-      message.channel.send('Nickname exceeds length limit.') 
+      message.channel.send('Nickname exceeds length limit.')
     } else {
       nicknames[message.guild.id][message.author.id] = nick
       message.channel.send(`Set your nickname to ${nick}.`)

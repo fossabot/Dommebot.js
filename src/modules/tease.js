@@ -22,7 +22,7 @@ const Gender = require('../utilities/gender')
 const fs = require('fs')
 
 let teases = {}
-fs.readFile('./config/teases.json', 'utf8', function onRead(err, data) {
+fs.readFile('./config/teases.json', 'utf8', function onRead (err, data) {
   if (err) {
     console.error(err.message)
   }
